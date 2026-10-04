@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Заметки - Пугачев Данил</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body>
+
+    <header class="header">
+        <h2> To-Do List</h2>
+        <div class="input-container">
+            <textarea id="taskInput" placeholder="Введите что-нибудь..."></textarea>
+            <button id="addBtn">Добавить</button>
+        </div>
+    </header>
+
+    <main class="workspace">
+        <section class="panel">
+            <div class="panel-header">
+                <h3>Ваши стикеры</h3>
+                <button id="clearStickersBtn" class="clear-btn" title="Очистить поле со стикерами">✕</button>
+            </div>
+            <div id="stickerPool" class="sticker-pool"></div>
+        </section>
+
+        <section class="panel board-panel">
+            <div class="panel-header">
+                <h3>Доска заметок</h3>
+                <button id="clearBoardBtn" class="clear-btn" title="Очистить доску">✕</button>
+            </div>
+            <div id="board" class="board"></div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p> Веб-Программирование, 5 семестр</p>
+        <p> Пугачев Данил Максимович, 3-ТИД-10</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
